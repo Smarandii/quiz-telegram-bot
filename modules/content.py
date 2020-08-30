@@ -1,8 +1,9 @@
 import os
 
-TOKEN = "1358525652:AAGQzM6Z2xGQTYAveHDq1qCnlQAUifj-L34"
+TOKEN = "TOKEN"
 FORMS_FILE_PATH = os.path.normpath('data/forms.csv')
 USERS_FILE_PATH = os.path.normpath('data/users.csv')
+
 
 man_questions = {'q1': "Как ты знакомишься с девушками?",
                  'q2': "Насколько хорошо проходят твои свидания?",
