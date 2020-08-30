@@ -1,4 +1,4 @@
-TOKEN = "1358525652:AAGQzM6Z2xGQTYAveHDq1qCnlQAUifj-L34"
+TOKEN = "TOKEN"
 
 man_questions = {'q1': "Как ты знакомишься с девушками?",
                  'q2': "Насколько хорошо проходят твои свидания?",
