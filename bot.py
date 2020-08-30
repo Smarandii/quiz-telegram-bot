@@ -1,11 +1,10 @@
 from time import sleep
 from telebot import TeleBot
 
-import sendemail
-from buttons import *
-from models import User
-from database import get_user
-import content
+from modules.buttons import *
+from modules.models import User
+from modules.database import get_user
+from modules import content, sendemail
 
 bot = TeleBot(content.TOKEN)
 h_menu = HelpMenu()

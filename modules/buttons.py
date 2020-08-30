@@ -77,4 +77,5 @@ CONTACTS_KEYBOARD = keyboard_maker(3,
                                    url_for_each_button=['',
                                                         '',
                                                         '',
-                                                        ''])
+                                                        ''],
+                                   without_back_btn=True)

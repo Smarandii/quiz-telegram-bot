@@ -3,6 +3,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
+from modules.content import FORMS_FILE_PATH
 SENDER = 'sds.project.bot@gmail.com'
 PASSWORD = 'sds_project_bot2020'
 PORT = 465
@@ -18,7 +19,7 @@ def create_message(sender, receiver, message_text, subject):
 
 
 def get_attachment():
-    file_name = 'forms.csv'
+    file_name = FORMS_FILE_PATH
     attachment_file = open(file_name, 'rb')
     attachment = MIMEBase('application', 'octet-stream')
     attachment.set_payload(attachment_file.read())

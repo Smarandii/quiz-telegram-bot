@@ -1,4 +1,4 @@
-from content import *
+from modules.content import *
 
 
 def sort_base_by_number(data_base):
@@ -9,8 +9,8 @@ def sort_base_by_number(data_base):
 class User:
     def __init__(self, telegram_id, username, number=None, name=None, sex=None, email=None,
                  phone_number=None, answers=None):
-        self.base_file = "users.csv"
-        self.forms_file = 'forms.csv'
+        self.base_file = USERS_FILE_PATH
+        self.forms_file = FORMS_FILE_PATH
         self.user_id = telegram_id
         self.username = username
         self.name = name
