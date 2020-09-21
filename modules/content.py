@@ -1,6 +1,6 @@
 import os
 
-TOKEN = "TOKEN"
+TOKEN = "1358525652:AAGQzM6Z2xGQTYAveHDq1qCnlQAUifj-L34"
 FORMS_FILE_PATH = os.path.normpath('data/forms.csv')
 USERS_FILE_PATH = os.path.normpath('data/users.csv')
 
@@ -190,10 +190,16 @@ service_msg = {
     'result': "Чтобы получить результаты теста, нужно заполнить анкету!"
               "\nНапиши в этот чат сначала своё ФИО, затем номер телефона и почту, "
               "а затем жми 'Получить результат'!",
-    'contacts': "Наши контакты:"
+    'contacts': "Наши контакты:\n"
+                "Инстаграм - https://instagram.com/sds.training.msk?igshid=17oryz7tpofoc\n\n"
+                "Сайт - http://sds-online.ru\n\n"
+                "Инстаграм Екатерины - https://instagram.com/trener_ka_mgn?igshid=fib6c9vi3xli\n\n"
+                "ВК Дениса - https://vk.com/dep_t\n\n"
+                "Написать  - treningi-biz@mail.ru\n\n"
+                "Позвонить - +79090993997"
 }
 
 admin_id = 231584958
-client_id = 111111111
+client_id = 451157037
 
 data_base_head = '0,telegram_id,Имя,Пол,Юзернейм,Номер телефона,Email,Ответы\n'

@@ -1,5 +1,6 @@
 from time import sleep
 from telebot import TeleBot
+from telebot.apihelper import ApiTelegramException
 
 from modules.buttons import *
 from modules.models import User
@@ -14,7 +15,7 @@ r_menu = ResultMenu()
 def send_forms(user: User):
     try:
         form = user.get_form_message()
-        # bot.send_message(content.client_id, text=form)
+        bot.send_message(content.client_id, text=form)
         sendemail.send_forms('olegsmarandi@gmail.com')
         sendemail.send_forms('treningi-biz@mail.ru')
     except Exception as er:
@@ -77,7 +78,7 @@ def send_contacts(message):
     if user.not_in_base():
         user.add_user_in_db()
     message = content.service_msg['contacts']
-    bot.send_message(chat_id=user.user_id, text=message, reply_markup=CONTACTS_KEYBOARD)
+    bot.send_message(chat_id=user.user_id, text=message)
 
 
 @bot.message_handler(content_types=["text"])
@@ -123,7 +124,7 @@ def callback_inline(call):
         if user.form_filled():
             message = user.get_result_from_answers()
             bot.send_message(chat_id=user.user_id, text=message)
-            bot.send_message(chat_id=user.user_id, text=content.service_msg['contacts'], reply_markup=CONTACTS_KEYBOARD)
+            bot.send_message(chat_id=user.user_id, text=content.service_msg['contacts'])
             if user.not_in_forms():
                 user.add_user_in_forms()
                 send_forms(user)
@@ -141,5 +142,5 @@ if __name__ == "__main__":
     while True:
         try:
             bot.polling(none_stop=True)
-        except ConnectionError as error:
-            sleep(15)
+        except ConnectionError or ApiTelegramException as error:
+            sleep(3)

@@ -71,11 +71,3 @@ class ResultMenu:
 
 START_TEST_BUTTON = one_button_keyboard('Пройти тест', 'start_test')
 GET_RESULT_BUTTON = one_button_keyboard('Получить результат', 'get_result')
-CONTACTS_KEYBOARD = keyboard_maker(3,
-                                   ['Инстаграм Организаторов', 'Инстарам Проекта', 'Наш сайт'],
-                                   ['None', 'None', 'None', 'None'],
-                                   url_for_each_button=['',
-                                                        '',
-                                                        '',
-                                                        ''],
-                                   without_back_btn=True)
