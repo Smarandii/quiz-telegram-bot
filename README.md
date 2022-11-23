@@ -1,4 +1,4 @@
-# dynamic_seduction_system_bot
+# quiz-telegram-bot
 @sds_project_bot
 
 
