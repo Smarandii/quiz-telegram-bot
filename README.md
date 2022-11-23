@@ -4,8 +4,8 @@
 
 ### How to run locally:
 ```shell
-git clone https://github.com/Smarandii/dynamic_seduction_system_bot
-cd dynamic_seduction_system_bot
+git clone https://github.com/Smarandii/quiz-telegram-bot
+cd quiz-telegram-bot
 python -m venv venv
 .\venv\Scripts\activate
 pip install -r requirements
