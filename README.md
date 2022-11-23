@@ -2,7 +2,17 @@
 @sds_project_bot
 
 
-# Usage:
+### How to run locally:
+```shell
+git clone https://github.com/Smarandii/dynamic_seduction_system_bot
+cd dynamic_seduction_system_bot
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements
+python bot.py
+```
+
+### Usage:
 ![image](https://user-images.githubusercontent.com/48328325/201468243-f2aa3239-e4dd-425b-ae21-327c2a7d0c6a.png)
 ![image](https://user-images.githubusercontent.com/48328325/201468259-9f145fd9-661e-4579-a6fa-574010ec6215.png)
 ![image](https://user-images.githubusercontent.com/48328325/201468265-426478b9-dbaa-435f-b459-115987a77978.png)
